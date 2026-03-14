@@ -1,76 +1,169 @@
-# MERN Multi App (ToDo + Notes + Quiz)
+MERN Multi App (ToDo • Notes • Quiz)
 
-Single MERN project with 3 modules in one app:
+A full-stack MERN application that combines three productivity tools into a single platform:
 
-- ToDo App
-- Notes App
-- Quiz App
+✔ ToDo Manager
+✔ Notes Manager
+✔ Quiz Builder & Runner
 
-## Features
+This project demonstrates CRUD operations, REST APIs, state management, and MongoDB integration in a modern MERN stack application.
 
-- Full CRUD for todos, notes, and quizzes
-- Quiz builder with multiple questions per quiz
-- Quiz runner with score tracking and restart flow
-- Filterable todo list with edit and clear-completed actions
-- Inline note editing with persistent storage in MongoDB
+✨ Features
+📝 ToDo Manager
 
-## Project Structure
+Create, update, and delete tasks
 
-- `server` → Express + MongoDB API
-- `client` → React (Vite) frontend
+Mark tasks as completed
 
-## Setup
+Filter tasks (active / completed)
 
-1. Create env file for backend:
+Clear completed tasks
 
-   - Copy `server/.env.example` to `server/.env`
-   - Update `MONGO_URI` if needed
+📒 Notes Manager
 
-2. Optional env file for frontend:
+Create and edit notes inline
 
-   - Add `client/.env` with `VITE_API_BASE_URL=http://localhost:5000/api` if your API runs on a different host
+Persistent storage using MongoDB
 
-3. Install dependencies:
+Quick updates and deletions
 
-```bash
+🧠 Quiz Builder & Runner
+
+Create quizzes with multiple questions
+
+Run quizzes interactively
+
+Score tracking
+
+Restart quiz functionality
+
+🛠 Tech Stack
+Frontend
+
+React
+
+Vite
+
+Axios
+
+CSS / UI Components
+
+Backend
+
+Node.js
+
+Express.js
+
+MongoDB
+
+REST API Architecture
+
+📂 Project Structure
+mern-multi-app/
+│
+├── server/        # Express + MongoDB backend
+│
+├── client/        # React (Vite) frontend
+│
+└── README.md
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/yourusername/mern-multi-app.git
+cd mern-multi-app
+2️⃣ Environment Setup
+Backend Environment
+
+Copy the example file:
+
+cp server/.env.example server/.env
+
+Edit .env if necessary:
+
+MONGO_URI=mongodb://localhost:27017/mern-multi-app
+PORT=5000
+Frontend Environment (Optional)
+
+Create client/.env
+
+VITE_API_BASE_URL=http://localhost:5000/api
+📦 Install Dependencies
 npm install
 npm install --prefix server
 npm install --prefix client
-```
+▶️ Run the Application
 
-4. Start both frontend and backend:
+Start both frontend and backend simultaneously:
 
-```bash
 npm run dev
-```
+🌐 Application URLs
 
-## URLs
+Frontend
 
-- Frontend: `http://localhost:5173`
-- Backend: `http://localhost:5000`
-- Health API: `http://localhost:5000/api/health`
+http://localhost:5173
 
-## API Endpoints
+Backend
 
-### Todos
+http://localhost:5000
 
-- `GET /api/todos`
-- `POST /api/todos`
-- `PUT /api/todos/:id`
-- `DELETE /api/todos/:id`
+Health API
 
-### Notes
+http://localhost:5000/api/health
+🔗 API Endpoints
+Todos API
+Method	Endpoint
+GET	/api/todos
+POST	/api/todos
+PUT	/api/todos/:id
+DELETE	/api/todos/:id
+Notes API
+Method	Endpoint
+GET	/api/notes
+POST	/api/notes
+PUT	/api/notes/:id
+DELETE	/api/notes/:id
+Quiz API
+Method	Endpoint
+GET	/api/quizzes
+POST	/api/quizzes
+PUT	/api/quizzes/:id
+DELETE	/api/quizzes/:id
+📌 Key Concepts Demonstrated
 
-- `GET /api/notes`
-- `POST /api/notes`
-- `PUT /api/notes/:id`
-- `DELETE /api/notes/:id`
+MERN stack full-stack architecture
 
-### Quizzes
+RESTful API design
 
-- `GET /api/quizzes`
-- `POST /api/quizzes`
-- `PUT /api/quizzes/:id`
-- `DELETE /api/quizzes/:id`
-=======
+CRUD operations
+
+MongoDB database integration
+
+Component-based frontend design
+
+👩‍💻 Author
+
+Shivangi Singh
+
+GitHub
+https://github.com/ShivangiSingh13
+
+LinkedIn
+https://www.linkedin.com/in/shivangi131/
+
+⭐ Contributing
+
+Contributions, issues, and suggestions are welcome.
+
+📄 License
+
+This project is created for learning and portfolio demonstration purposes.
+
+✅ This version will look much cleaner on GitHub because it includes:
+
+proper headings
+
+feature sections
+
+tables for APIs
+
+structured layout
 # task-manager
